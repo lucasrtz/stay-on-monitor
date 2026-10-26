@@ -14,6 +14,7 @@ Every alt+tab, Windows throws Chrome back to your main monitor. Stay on Monitor 
 - ⌨️ Keyboard shortcut: `Alt+Shift+F`
 - 🎮 Fixes the alt+tab problem with fullscreen / stretched-resolution games
 - 🌎 English and Portuguese (switch with the flags in the popup)
+- 🇧🇷 Built-in Pix QR code page for donations (choose the amount)
 - 🕵️ No data collected, no ads, no network requests
 
 ## Install
@@ -38,8 +39,8 @@ To change the shortcut, open `chrome://extensions/shortcuts`.
 
 Stay on Monitor is free. If it helps you, consider supporting development:
 
-- ☕ [Ko-fi](https://ko-fi.com/YOUR_USERNAME)
-- 💙 [PayPal](https://www.paypal.com/donate/?hosted_button_id=YOUR_ID)
+- 🇧🇷 **Pix** (Brazil): click **Pix** in the extension popup to get a QR code, or use the key `6cf2fa1a-ddeb-40e8-868e-aaed58270125`
+- 🌎 International options (Ko-fi / PayPal): coming soon
 - ⭐ Star this repository
 
 ## Development
@@ -48,7 +49,8 @@ Stay on Monitor is free. If it helps you, consider supporting development:
 background.js        service worker: lock logic
 i18n.js              UI strings (English / Portuguese)
 popup/               popup UI (switch, monitor picker, language flags, support buttons)
-popup/config.js      donation links (empty = button hidden)
+popup/config.js      donation links and Pix key (empty = button hidden)
+pix/                 Pix donation page (QR code generated locally)
 icons/               extension icons
 ```
 
@@ -60,3 +62,7 @@ Source-available, **all rights reserved**. You can read the code and use the ext
 but copying, republishing or distributing modified versions is not allowed. See [LICENSE](LICENSE).
 
 Contributions are welcome via issues and pull requests.
+
+### Third-party
+
+- [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator) by Kazuhiko Arase, MIT license (`pix/vendor/qrcode.js`)

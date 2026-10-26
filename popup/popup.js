@@ -80,18 +80,12 @@ function setupSupport() {
     el.href = url;
     el.hidden = false;
   }
-  if (SUPPORT.pixUrl) {
+  // Pix: external page if set, otherwise the built-in QR code page
+  const pixUrl = SUPPORT.pixUrl || (SUPPORT.pixKey && chrome.runtime.getURL('pix/pix.html'));
+  if (pixUrl) {
     const pix = document.getElementById('pix');
     pix.hidden = false;
-    pix.addEventListener('click', () => chrome.tabs.create({ url: SUPPORT.pixUrl }));
-  } else if (SUPPORT.pixKey) {
-    const pix = document.getElementById('pix');
-    pix.hidden = false;
-    pix.addEventListener('click', async () => {
-      await navigator.clipboard.writeText(SUPPORT.pixKey);
-      pix.querySelector('span').textContent = t('pixCopied');
-      setTimeout(() => { pix.querySelector('span').textContent = t('pix'); }, 2000);
-    });
+    pix.addEventListener('click', () => chrome.tabs.create({ url: pixUrl }));
   }
 }
 

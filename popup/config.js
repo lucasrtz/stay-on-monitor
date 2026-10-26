@@ -5,6 +5,8 @@ const SUPPORT = {
   kofi: '',            // e.g. 'https://ko-fi.com/yourname'
   paypal: '',          // e.g. 'https://www.paypal.com/donate/?hosted_button_id=XXXX'
   githubSponsors: '',  // e.g. 'https://github.com/sponsors/yourname'
-  pixUrl: '',          // Pix donation page, e.g. 'https://pix.pro/yourname' (opens in a new tab)
-  pixKey: '6cf2fa1a-ddeb-40e8-868e-aaed58270125',          // OR a random Pix key (copied to clipboard on click); used only if pixUrl is empty
+  pixUrl: '',          // External Pix page, e.g. 'https://pix.pro/yourname'. If set, used instead of the QR page
+  pixKey: '6cf2fa1a-ddeb-40e8-868e-aaed58270125', // Opens the built-in QR code page (pix/pix.html)
+  pixName: 'Lucas Nogueira Artiz', // Receiver name inside the QR code (max 25 chars)
+  pixCity: '',         // Receiver city inside the QR code (max 15 chars, defaults to BRASIL)          // OR a random Pix key (copied to clipboard on click); used only if pixUrl is empty
 };
