@@ -47,15 +47,21 @@
   </main>
 
   <section id="support" class="card support">
-    <h2 data-i18n="supportTitle"></h2>
+    <h2><span class="heart">❤</span> <span data-i18n="supportTitle"></span></h2>
     <p data-i18n="supportText"></p>
     <div class="buttons">
       <a id="kofi" class="btn kofi" target="_blank" rel="noopener" hidden>☕ <span data-i18n="kofi"></span></a>
       <a id="paypal" class="btn paypal" target="_blank" rel="noopener" hidden><span data-i18n="paypal"></span></a>
       <a id="sponsors" class="btn sponsors" target="_blank" rel="noopener" hidden>♥ <span data-i18n="sponsors"></span></a>
-      <button id="pix" class="btn pix" hidden><span data-i18n="pix"></span></button>
-      <a id="star" class="btn star" target="_blank" rel="noopener">⭐ <span data-i18n="star"></span></a>
+      <button id="pix" class="btn pix" hidden>
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
+          <rect x="6" y="6" width="12" height="12" rx="3" transform="rotate(45 12 12)" fill="none" stroke="currentColor" stroke-width="2.6"/>
+        </svg>
+        <span data-i18n="pix"></span>
+      </button>
     </div>
+    <!-- Star: main button when there is no payment option, small link otherwise -->
+    <a id="star" target="_blank" rel="noopener">⭐ <span data-i18n="star"></span></a>
     <button id="pixSmall" class="link" data-i18n="pixSmall" hidden></button>
   </section>
 

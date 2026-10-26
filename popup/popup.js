@@ -24,6 +24,10 @@ let pixUrl = '';
 function updatePixPlacement() {
   document.getElementById('pix').hidden = !pixUrl || lang !== 'pt';
   document.getElementById('pixSmall').hidden = !pixUrl || lang === 'pt';
+
+  // Star is the main button only when no payment button is showing
+  const anyPayment = [...document.querySelectorAll('.buttons .btn')].some((b) => !b.hidden);
+  document.getElementById('star').className = anyPayment ? 'link' : 'btn star';
 }
 
 function monitorName(d, i) {

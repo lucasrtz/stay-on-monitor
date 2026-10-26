@@ -153,6 +153,8 @@ select {
 .sponsors { background: #db61a2; }
 .pix { background: #32bcad; }
 .star { background: #334155; }
+.heart { color: #ef4444; }
+a.link { width: fit-content; }
 
 .link {
   display: block;
