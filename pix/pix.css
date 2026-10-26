@@ -102,3 +102,4 @@ h1 { margin: 0; font-size: 19px; color: var(--accent); }
 .primary { border: 0; background: var(--pix); color: #04241f; }
 .ghost { border: 1px solid var(--border); background: none; color: var(--text); font-weight: 600; }
 .btn:hover { filter: brightness(1.1); }
+.heart { color: #ef4444; }

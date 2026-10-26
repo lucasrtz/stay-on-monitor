@@ -26,7 +26,7 @@ const STRINGS = {
     pixScan: 'Open your bank app → Pix → Pay with QR code',
     pixCopyCode: 'Copy Pix code (copia e cola)',
     pixCopyKey: 'Copy Pix key',
-    pixThanks: 'Thank you for supporting Stay on Monitor! ❤',
+    pixThanks: 'Thank you for supporting Stay on Monitor!',
   },
   pt: {
     badgeTitleOn: 'Stay on Monitor: LIGADO, fixo no monitor {n}',
@@ -53,7 +53,7 @@ const STRINGS = {
     pixScan: 'Abra o app do banco → Pix → Pagar com QR code',
     pixCopyCode: 'Copiar Pix copia e cola',
     pixCopyKey: 'Copiar chave Pix',
-    pixThanks: 'Obrigado por apoiar o Stay on Monitor! ❤',
+    pixThanks: 'Obrigado por apoiar o Stay on Monitor!',
   },
 };
 
