@@ -15,7 +15,15 @@ function applyLang() {
   document.querySelectorAll('.flag').forEach((f) => {
     f.classList.toggle('active', f.dataset.lang === lang);
   });
+  updatePixPlacement();
   if (state) render();
+}
+
+// Pix is Brazil-only: main button in Portuguese, small secondary link in English
+let pixUrl = '';
+function updatePixPlacement() {
+  document.getElementById('pix').hidden = !pixUrl || lang !== 'pt';
+  document.getElementById('pixSmall').hidden = !pixUrl || lang === 'pt';
 }
 
 function monitorName(d, i) {
@@ -81,12 +89,11 @@ function setupSupport() {
     el.hidden = false;
   }
   // Pix: external page if set, otherwise the built-in QR code page
-  const pixUrl = SUPPORT.pixUrl || (SUPPORT.pixKey && chrome.runtime.getURL('pix/pix.html'));
-  if (pixUrl) {
-    const pix = document.getElementById('pix');
-    pix.hidden = false;
-    pix.addEventListener('click', () => chrome.tabs.create({ url: pixUrl }));
+  pixUrl = SUPPORT.pixUrl || (SUPPORT.pixKey && chrome.runtime.getURL('pix/pix.html')) || '';
+  for (const id of ['pix', 'pixSmall']) {
+    document.getElementById(id).addEventListener('click', () => chrome.tabs.create({ url: pixUrl }));
   }
+  updatePixPlacement();
 }
 
 (async () => {

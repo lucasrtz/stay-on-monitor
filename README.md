@@ -39,9 +39,9 @@ To change the shortcut, open `chrome://extensions/shortcuts`.
 
 Stay on Monitor is free. If it helps you, consider supporting development:
 
-- 🇧🇷 **Pix** (Brazil): click **Pix** in the extension popup to get a QR code, or use the key `6cf2fa1a-ddeb-40e8-868e-aaed58270125`
 - 🌎 International options (Ko-fi / PayPal): coming soon
 - ⭐ Star this repository
+- 🇧🇷 In Brazil? Use **Pix**: click *"In Brazil? Support with Pix"* in the popup for a QR code, or use the key `6cf2fa1a-ddeb-40e8-868e-aaed58270125`
 
 ## Development
 

@@ -18,6 +18,7 @@ const STRINGS = {
     sponsors: 'Sponsor',
     pix: 'Pix',
     pixCopied: 'Copied!',
+    pixSmall: 'In Brazil? Support with Pix',
     pixTitle: 'Support via Pix',
     pixSubtitle: 'Choose an amount and scan with your bank app.',
     pixOther: 'Other',

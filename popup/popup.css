@@ -153,3 +153,17 @@ select {
 .sponsors { background: #db61a2; }
 .pix { background: #32bcad; }
 .star { background: #334155; }
+
+.link {
+  display: block;
+  margin: 10px auto 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link:hover { color: var(--text); }
