@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../icons/icon32.png" alt="" width="22" height="22">
+    <h1>Stay on Monitor</h1>
+    <div class="langs">
+      <button class="flag" data-lang="en" title="English" aria-label="English">
+        <svg viewBox="0 0 19 10" width="21" height="11" aria-hidden="true">
+          <rect width="19" height="10" fill="#b22234"/>
+          <path d="M0 1.15h19M0 2.7h19M0 4.23h19M0 5.77h19M0 7.3h19M0 8.85h19" stroke="#fff" stroke-width=".77"/>
+          <rect width="7.6" height="5.4" fill="#3c3b6e"/>
+        </svg>
+      </button>
+      <button class="flag" data-lang="pt" title="Português" aria-label="Português">
+        <svg viewBox="0 0 20 14" width="16" height="11" aria-hidden="true">
+          <rect width="20" height="14" fill="#009c3b"/>
+          <path d="M10 1.6 18.2 7 10 12.4 1.8 7z" fill="#ffdf00"/>
+          <circle cx="10" cy="7" r="3.4" fill="#002776"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="card">
+    <button id="toggle" class="switch" role="switch" aria-checked="false">
+      <span class="knob">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+    </button>
+
+    <p id="status" class="status"></p>
+
+    <label class="row">
+      <span data-i18n="monitorLabel"></span>
+      <select id="monitor"></select>
+    </label>
+
+    <p class="hint" data-i18n="shortcutHint"></p>
+  </main>
+
+  <section id="support" class="card support">
+    <h2 data-i18n="supportTitle"></h2>
+    <p data-i18n="supportText"></p>
+    <div class="buttons">
+      <a id="kofi" class="btn kofi" target="_blank" rel="noopener" hidden>☕ <span data-i18n="kofi"></span></a>
+      <a id="paypal" class="btn paypal" target="_blank" rel="noopener" hidden><span data-i18n="paypal"></span></a>
+      <a id="sponsors" class="btn sponsors" target="_blank" rel="noopener" hidden>♥ <span data-i18n="sponsors"></span></a>
+      <button id="pix" class="btn pix" hidden><span data-i18n="pix"></span></button>
+      <a id="star" class="btn star" target="_blank" rel="noopener">⭐ <span data-i18n="star"></span></a>
+    </div>
+  </section>
+
+  <script src="../i18n.js"></script>
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+Stay on Monitor — Proprietary License
+
+Copyright (c) 2026 Lucas Nogueira Artiz (jeyzon). All rights reserved.
+
+The source code of Stay on Monitor ("the Software") is made publicly
+available for transparency and so users can verify what it does. It is NOT
+open source.
+
+You MAY:
+  1. View and read the source code.
+  2. Install and use the Software for your own personal use, including by
+     loading it unpacked in your own browser.
+  3. Submit issues and pull requests to the official repository. By
+     submitting a contribution you grant the copyright holder a perpetual,
+     worldwide, royalty-free license to use, modify and distribute it as
+     part of the Software.
+
+You MAY NOT, without prior written permission from the copyright holder:
+  1. Copy, redistribute, sell, sublicense or publish the Software, in whole
+     or in part, in any form, including on the Chrome Web Store, Microsoft
+     Edge Add-ons, Firefox Add-ons or any other store or website.
+  2. Publish modified versions or derivative works of the Software.
+  3. Change or remove the support/donation links, branding, name or icons
+     and distribute the result.
+  4. Use the name "Stay on Monitor" or its icons for any other product.
+
+Forking the repository on GitHub is permitted only as allowed by the GitHub
+Terms of Service, and only for the purpose of contributing back to the
+official repository.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE USE OF THE SOFTWARE.

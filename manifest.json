@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Stay on Monitor",
+  "version": "1.2.0",
+  "description": "Keep Chrome locked to the monitor you choose. Stops alt+tab from fullscreen games throwing it to your main screen.",
+  "permissions": ["storage", "system.display"],
+  "background": { "service_worker": "background.js" },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Stay on Monitor",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "commands": {
+    "toggle-lock": {
+      "suggested_key": { "default": "Alt+Shift+F" },
+      "description": "Turn Stay on Monitor on/off"
+    }
+  }
+}
