@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Stay on Monitor",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Keep Chrome locked to the monitor you choose. Stops alt+tab from fullscreen games throwing it to your main screen.",
   "permissions": ["storage", "system.display"],
   "background": { "service_worker": "background.js" },

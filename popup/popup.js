@@ -22,7 +22,12 @@ function applyLang() {
 // Pix is Brazil-only: main button in Portuguese, small secondary link in English
 let pixUrl = '';
 function updatePixPlacement() {
-  document.getElementById('pix').hidden = !pixUrl || lang !== 'pt';
+  const pix = document.getElementById('pix');
+  pix.hidden = !pixUrl || lang !== 'pt';
+  // In Portuguese, Pix comes before Ko-fi
+  const buttons = pix.parentElement;
+  if (lang === 'pt') buttons.prepend(pix);
+  else buttons.append(pix);
   document.getElementById('pixSmall').hidden = !pixUrl || lang === 'pt';
 
   // Star is the main button only when no payment button is showing

@@ -39,7 +39,7 @@ To change the shortcut, open `chrome://extensions/shortcuts`.
 
 Stay on Monitor is free. If it helps you, consider supporting development:
 
-- 🌎 International options (Ko-fi / PayPal): coming soon
+- ☕ [Ko-fi](https://ko-fi.com/lucaaas) (card or PayPal)
 - ⭐ Star this repository
 - 🇧🇷 In Brazil? Use **Pix**: click *"In Brazil? Support with Pix"* in the popup for a QR code, or use the key `6cf2fa1a-ddeb-40e8-868e-aaed58270125`
 
